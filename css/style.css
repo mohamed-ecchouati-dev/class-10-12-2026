@@ -1,0 +1,44 @@
+:root {
+    --color1: #d61d1d;
+    --color2: #1569d7e0;
+    --color3: green;
+    --grad1: linear-gradient(red, blue);
+    --grad2: linear-gradient(90deg, black, blue);
+    --grad3: linear-gradient( green, white);
+}
+
+.grad {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, black,white)
+}
+
+.item {
+    width: 550px;
+    height: auto;
+    color: red
+
+}
+
+.list {
+  color: var(--color1);
+}
+
+
+.grad1 {
+    background-image: var(--grad1);
+}
+.grad2 {
+    background-image: var(--grad2);
+}
+.grad3 {
+    background-image: var(--grad3);
+}
